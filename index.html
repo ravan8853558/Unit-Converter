@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Unit Converter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Unit Converter Tool</h1>
+        
+        <!-- Unit Type Dropdown -->
+        <label for="unitType">Select Unit Type:</label>
+        <select id="unitType">
+            <option value="length">Length</option>
+            <option value="temperature">Temperature</option>
+            <option value="weight">Weight</option>
+            <option value="area">Area</option>
+            <option value="volume">Volume</option>
+            <option value="speed">Speed</option>
+            <option value="time">Time</option>
+        </select>
+        
+        <!-- From Unit Dropdown -->
+        <label for="fromUnit">From Unit:</label>
+        <select id="fromUnit"></select>
+        
+        <!-- To Unit Dropdown -->
+        <label for="toUnit">To Unit:</label>
+        <select id="toUnit"></select>
+
+        <!-- Input Field for Value -->
+        <label for="valueInput">Enter Value:</label>
+        <input type="number" id="valueInput" placeholder="Enter value" />
+
+        <!-- Convert Button -->
+        <button id="convertBtn">Convert</button>
+
+        <!-- Result Display -->
+        <h3>Converted Value:</h3>
+        <p id="convertedValue"></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
